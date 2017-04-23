@@ -25,5 +25,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)clickMe:(id)sender {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"WELCOME" message:@"Welcome to the world of objc" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *closeAction = [UIAlertAction actionWithTitle:@"CLOSE" style:UIAlertActionStyleCancel handler:nil];
+    [alert addAction:closeAction];
+    [self presentViewController:alert animated:YES completion:nil];
+}
 
 @end
